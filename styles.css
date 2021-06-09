@@ -161,6 +161,7 @@ h2 {
   font-size: 40px;
   margin-bottom: 1.5em;
   font-family: "noto sans jp", sans-serif;
+  text-align: center;
 }
 
 .btn button {
@@ -177,4 +178,24 @@ h2 {
   background-color: #ffc8dd;
   /* padding: 0.7em; */
   font-size: 22px;
+}
+
+.meme-zone {
+  background-color: green;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.practice-meme img {
+  max-width: 350px;
+}
+
+.meme img {
+  max-width: 200px;
+  /* position: absolute; */
+}
+
+.meme {
+  position: relative;
 }

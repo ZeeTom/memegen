@@ -17,23 +17,34 @@
       <h1>Meme Cloud</h1>
       <h2>Make your dream meme</h2>
     </header>
-    <section class="inputs">
+    <!-- <section> -->
+    <form class="inputs">
       <div class="img-link">
         <label for="img-link">Image: </label>
-        <input type="text" name="img-link" placeholder="Image Link" />
+        <input
+          type="text"
+          name="img-link"
+          class="img-url"
+          placeholder="Image Link"
+        />
       </div>
       <div class="top-text">
         <label for="top-text">Text (Top): </label>
-        <input type="text" name="top-text" placeholder="optional" />
+        <input type="text" name="top-text" placeholder="optional" id="top" />
       </div>
       <div class="bot-text">
         <label for="bot-text">Text (Bottom): </label>
-        <input type="text" name="bot-text" placeholder="optional" />
+        <input type="text" name="bot-text" placeholder="optional" id="bot" />
       </div>
       <div class="btn">
         <button class="btn">Generate Meme</button>
       </div>
+    </form>
+    <section class="meme-zone">
+      <div class="practice-meme meme"><img src="cubs.png" alt="" /></div>
     </section>
+
+    <!-- </section> -->
     <script src="script.js"></script>
   </body>
 </html>
