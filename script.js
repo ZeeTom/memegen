@@ -31,10 +31,37 @@ function createMeme(e) {
   // create top & bot text using value from user input
   let topText = document.createElement("span");
   topText.textContent = top.value;
+  topText.classList.add("top");
   let botText = document.createElement("span");
   botText.textContent = bot.value;
+  botText.classList.add("bot");
+
+  // add both text to meme div
+  newMeme.appendChild(topText);
+  newMeme.appendChild(botText);
+
+  // add x close button
+  let x = document.createElement("button");
+  x.classList.add("x");
+  x.textContent = "X";
+
+  // add x close to meme div
+  newMeme.appendChild(x);
 
   // add new meme to meme zone
   let memeZone = document.querySelector(".meme-zone");
   memeZone.appendChild(newMeme);
+
+  // Clear input values
+  img.value = "";
+  bot.value = "";
+  top.value = "";
 }
+
+document.addEventListener("click", function (e) {
+  console.log(e.target);
+  if (e.target.classList.contains("x")) {
+    let parent = e.target.parentNode;
+    parent.remove();
+  }
+});
