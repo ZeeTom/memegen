@@ -26,7 +26,7 @@ function createMeme(e) {
 
   // add image to meme div
   newMeme.appendChild(newImg);
-  //   console.log(newMeme);
+  // console.log(newMeme);
 
   // create top & bot text using value from user input
   let topText = document.createElement("span");
