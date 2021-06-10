@@ -58,8 +58,8 @@ function createMeme(e) {
   top.value = "";
 }
 
+// Remove meme
 document.addEventListener("click", function (e) {
-  console.log(e.target);
   if (e.target.classList.contains("x")) {
     let parent = e.target.parentNode;
     parent.remove();
